@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação</title>
+    <script defer src="scripts.js"></script>
+
+<body>
+
+    <!-- QUESTÃO 1 -->
+    <h1>Calculadora de IMC Simplificada</h1>
+    <div>
+        <input type="number" id="peso" placeholder="Peso (kg)" step="0.1">
+        <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+        <button id="botaoCalcular">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+
+    <!-- QUESTÃO 2 -->
+    <div class="container">
+        <br><br><br><br>
+        <h1>Simulador de Votação</h1>
+
+        <select id="candidato">
+            <option value="0">Candidato A</option>
+            <option value="1">Candidato B</option>
+            <option value="2">Candidato C</option>
+        </select>
+
+        <div>
+            <button onclick="votar()">Votar</button>
+            <button onclick="apurar()">Apurar</button>
+            <button onclick="zerar()">Zerar</button>
+        </div>
+
+        <div id="resultado2"></div>
+    </div>
+
+    <!-- QUESTÃO 3 -->
+    <br><br><br><br>
+    <h1>Conversor de Temperatura</h1>
+    <label for="temperature">Temperatura:</label>
+    <input type="number" id="temperature" value="0">
+    <label for="conversion-type">Converter de:</label>
+    <select id="conversion-type">
+        <option value="celsius-to-fahrenheit">Celsius para Fahrenheit</option>
+        <option value="fahrenheit-to-celsius">Fahrenheit para Celsius</option>
+    </select>
+    <button onclick="convertTemperatura()">Converter</button>
+    <p id="resultado3"></p>
+
+    <!-- QUESTÃO 4 -->
+    <br><br><br><br>
+    <h1>Controle de Gastos</h1>
+    <label for="valor">Valor gasto:</label>
+    <input type="number" id="valor" placeholder="Digite o valor">
+    <button onclick="adicionarGasto()">Adicionar</button>
+    <button onclick="exibirResumo()">Exibir resumo</button>
+    <div id="resultado4"></div>
+
+    <!-- QUESTÃO 5 -->
+    <br><br><br><br>
+    <h1>Jogo de Adivinhação</h1>
+    <input id="numero" type="number" placeholder="Digite um número">
+    <button onclick="verificarNumero()">Verificar</button>
+    <div id="resultado5"></div>
+    <br><br><br><br>
+</body>
+
+</html>
